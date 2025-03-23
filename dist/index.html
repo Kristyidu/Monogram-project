@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link href="./style.css" rel="stylesheet">
+  <title>Monogram</title>
+</head>
+
+<body class="m-0 ">
+
+    <section class="relative bg-cover bg-center h-screen p-5" style="background-image: url(img/img1.jpeg);">
+          <!-- nav section -->
+          <div
+            class="max-auto bg-[#1a2456] h-[60px] flex items-center justify-between p-[22px] sticky top-0 z-50"
+          >
+            <img
+              width="144px"
+              height="30px"
+              src="img/monogramlogo.png"
+              alt="LOGO" class="w-auto"
+            />
+
+            <div class="">
+              <ul class="text-[#EFC2B3] items-center hidden md:flex space-x-8 uppercase text-sm">
+                <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:underline">How it works</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:underline">workflows ▼</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:underline">Download</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:underline">Blog</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:underline">Support</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:underline">Shop</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:underline"><img src="img/monogramshop.png"></a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500 hover:underline">usd ▼</a></li>
+              </ul>
+            </div>
+                
+            <!-- Mobile Menu Button -->
+          <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+            <img src="img/hamburger.svg">
+          </button>
+          </div>
+
+          <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+          <ul class="text-[#EFC2B3] items-center hidden md:flex space-x-8 uppercase text-sm">
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">How it works</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">workflows ▼</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Download</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Blog</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Support</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">Shop</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500"><img src="img/shop.svg"></a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-500">usd ▼</a></li>
+              </ul>
+        </div>
+
+        <!-- Hero section -->
+        <div class="flex justify-center items-center  text-center flex-col">
+
+          <span class="text-pink-200 text-4xl font-bold pt-56 tracking-wider uppercase">A Console for <br> Every Workflow</span>
+          <p class="text-pink-200 pt-6 tracking-wider">Discover the perfect console for yours.</p>
+          
+        </div>
+
+        <!-- Scroll Down Arrow -->
+        <button id="scroll-arrow" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 hover:animate-ping text-5xl ">
+          <svg class="w-16 h-14 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+      </section>
+              <!-- End of Hero Section -->
+
+      <!-- Console Section -->
+    <section id="next-section" class="mt-10">
+      
+        <div class="sm:grid grid-cols-2 gap-4 px-20">
+          <!-- Grid Image 1 -->
+          <div class="relative group">
+            <img src="img/img2.jpeg"  class="w-full h-full object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+              Pre-order
+            </p>
+            <img src="img/img1-1.jpeg"  class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+            
+            <div class="flex justify-between ">
+              <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Mini console</span>
+              <p class="text-gray-400">Sold Out</p>
+            </div>
+            <div>
+              <p class="text-[#1a2456] text-sm">Ideal for everyday shortcuts. Adaptable to any workflow.</p>
+            </div>
+          </div>
+        
+          <!-- Grid-Image 2 -->
+          <div class="relative group">
+            <img src="img/img3-1.jpeg" alt="Default" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+              Pre-order
+            </p>
+            <img src="img/img3-2.jpeg" alt="Hovered" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+          
+            <div class="flex justify-between ">
+              <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Audio console</span>
+              <p class="text-gray-400">Sold Out</p>
+            </div>
+            <div>
+              <p class="text-[#1a2456] text-sm">Ideal for music & audio. Adaptable to any workflow.</p>
+            </div>
+          
+          </div>
+
+        
+            <!-- Grid Image 3 -->
+            <div class="relative group">
+              <img src="img/img4-1.jpeg" alt="Default" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                  <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+                Pre-order
+              </p>
+              <img src="img/img4.jpeg" alt="Hovered" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+              
+              <div class="flex justify-between ">
+                <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Photo console</span>
+                <p class="text-gray-400">Sold Out</p>
+              </div>
+              <div>
+                <p class="text-[#1a2456] text-sm">Ideal for photo & video. Adaptable to any workflow.</p>
+              </div>
+            </div>
+          
+            <!-- Grid-Image 4-->
+            <div class="relative group">
+              <img src="img/img5-1.jpeg" alt="Default" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                  <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase"> Pre-order</p>
+             
+                  <img src="img/img5-2.jpeg" alt="Hovered" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+            
+              <div class="flex justify-between ">
+                <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Video console</span>
+                <p class="text-gray-400">Sold Out</p>
+              </div>
+              <div>
+                <p class="text-[#1a2456] text-sm">Ideal for Video & Film. Adaptable to any workflow.</p>
+              </div>
+    </section>
+
+        <!-- Keyboard Section -->
+
+    <secttion class="relative group">
+      <div class="w-full h-[385px]" style="width: 100%; height: 385px; display: flex; justify-content: center;">
+        <img src="./img/img6.png" alt=""  class="w-full h-full mt-10 object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="width: 88%; height: 100%;"/>
+        <p class="absolute top-14 right-20 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">Pre-order </p>
+
+          <img src="img/Monogram_Keyboard_2_878639a5-2865-4c4f-a21e-498f3a3db3b8_750x422_crop_center.jpg.jpeg" class="absolute w-full 
+          h-full mt-10 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="width: 90%; height: 350px;"/>
+      </div>
+
+      <div class="flex justify-between mt-10 px-20">
+        <span class="uppercase mt-3 text-[#1a2456] font-bold text-lg">Monogram Keyboard + Multipad</span>
+        <p class="text-gray-400">Sold Out</p>
+      </div>
+      <div class="px-20">
+        <p class="text-[#1a2456] text-sm">Adaptable to any workflow.</p>
+      </div>
+    </section>
+        <!-- End of keyboard section -->
+
+         <!-- Create Own console  -->
+    <section class="my-10">
+      <div class="h-[506.25px] w-full flex  pb-[74px] flex-col items-center justify-start bg-cover bg-bottom" style="background-image: url(../dist/img/img7.jpeg);">
+        <span class="mt-10  mb-5 text-4xl text-[#1a2456] font-bold uppercase"> Create Your Own Console </span>
+        <p class="text-[#1a2456] ">Add-on to make it perfect.</p>
+      </div>
+
+    </section>
+      <!-- //Ends here -->
+
+    
+    <!-- different monogram product cards -->
+
+<section class="my-20">
+    <div class="sm:grid grid-cols-3 gap-8 px-20 ">
+
+       <!-- Product 1 -->
+        
+      <div class="relative group">
+        <img src="img/img8.png" class="w-full h-[400px] object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="height: 400px;">
+        <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+          Pre-order
+        </p>
+        <img src="img/img8-1.jpeg" class="w-full h-[400px] absolute inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="height: 400px;">
+        
+        <div class="flex justify-between ">
+        <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Monogram Keyboard
+        </span>
+        <p class="text-gray-400 pt-2">Sold Out</p>
+      </div>
+      </div>
+
+      <div class="relative group">
+        <img src="img/img9.png" class="w-full h-[400px] object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="height: 400px;">
+        <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+          Pre-order
+        </p>
+        <img src="img/img9-1.jpeg" class="w-full h-[400px] absolute inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="height: 400px;">
+      
+        <div class="flex justify-between ">
+          <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Monogram Multipad
+          </span>
+          <p class="text-gray-400 pt-2">Sold Out</p>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <img src="img/img10.jpeg" class="w-full h-[400px] object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="height: 400px;">
+        <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+          Pre-order
+        </p>
+        <img src="img/img10-1.jpeg" class="w-full h-[400px] absolute inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="height: 400px;">
+      
+        <div class="flex justify-between ">
+          <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Monogram <br> Core
+          </span>
+          <p class="text-[#1a2456] pt-2">$159</p>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="sm:grid grid-cols-3 gap-8 px-20 mt-10">
+
+      <!-- Product 2 -->
+       
+     <div class="relative group">
+        <img src="img/-img 11-1.jpeg" class="w-full h-[400px] object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="height: 400px;">
+        <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+          Pre-order
+        </p>
+        <img src="img/img11.jpeg" class="w-full h-[400px] absolute inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="height: 400px;">
+      
+        <div class="flex justify-between ">
+          <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Slider Module
+          </span>
+          <p class="text-gray-400 pt-2">Sold Out</p>
+        </div>
+      </div>
+
+     <div class="relative group">
+       <img src="img/-img 11-1.jpeg" class="w-full h-[400px] object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="height: 400px;">
+       <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+         Pre-order
+       </p>
+       <img src="img/img12.jpeg" class="w-full h-[400px] absolute inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="height: 400px;">
+     
+       <div class="flex justify-between ">
+        <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Orbiter Module
+        </span>
+        <p class="text-gray-400 pt-2">Sold Out</p>
+      </div>
+      </div>
+
+     <div class="relative group">
+       <img src="img/img10.jpeg" class="w-full h-[400px] object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="height: 400px;">
+       <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+         Pre-order
+       </p>
+       <img src="img/img10-1.jpeg" class="w-full h-[400px] absolute inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="height: 400px;">
+     
+       <div class="flex justify-between ">
+        <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Essential Keys Module
+        </span>
+        <p class="text-gray-400 pt-2">Sold Out</p>
+      </div>
+      </div>
+   </div>
+  
+
+   <div class="sm:grid grid-cols-3 gap-8 px-20 mt-10">
+
+    <!-- Product 3 -->
+     
+   <div class="relative group">
+     <img src="img/console.jpeg" class="w-full h-[400px] object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="height: 400px;">
+     <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+       Pre-order
+     </p>
+     <img src="img/Packaging_DialHeroBracket1_Monogram_May20204539_375e79fb-32f0-447b-b606-3dd0ac8318f6_1366x911_crop_center.jpeg" class="w-full h-[400px] absolute inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="height: 400px;">
+  
+     <div class="flex justify-between ">
+      <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Dial Module
+      </span>
+      <p class="text-gray-400 pt-2">Sold Out</p>
+    </div>
+    </div>
+
+   <div class="relative group">
+     <img src="img/open-case.jpeg" class="w-full h-[400px] object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="height: 400px;">
+     <p class="absolute top-2 right-0 bg-[#ff8d6b] text-black px-3 py-1 text-sm uppercase">
+       Pre-order
+     </p>
+     <img src="img/close-case.jpeg" class="w-full h-[400px] absolute inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="height: 400px;">
+   
+     <div class="flex justify-between ">
+      <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Monogram Carrying <br> Case
+      </span>
+      <p class="text-gray-400 pt-2">Sold Out</p>
+    </div>
+    </div>
+
+   <div class="">
+     <img src="img/green bk.jpeg" class="w-full h-[400px]" style="height: 400px;">
+    
+    
+     <div class="flex justify-between ">
+      <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">ConsolePack:<br> Video
+      </span>
+      <p class="text-[#1a2456] pt-2">$69</p>
+    </div>
+    </div>
+ </div>
+
+ <div class="sm:grid grid-cols-3 gap-8 px-20 mt-10">
+
+  <!-- Product 4 -->
+   
+  <div class="">
+    <img src="img/pink-bk.jpeg" class="w-full h-[400px]" style="height: 400px;">
+   
+    <div class="flex justify-between ">
+      <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Console Pack:<br> Photo
+      </span>
+      <p class="text-[#1a2456] pt-2">$39</p>
+    </div>
+    </div>
+ 
+
+ <div class="">
+  <img src="img/yellow-bk.jpeg" class="w-full h-[400px]" style="height: 400px;">
+ 
+  <div class="flex justify-between ">
+    <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Console Pack:<br> Audio
+    </span>
+    <p class="text-[#1a2456] pt-2">$29</p>
+  </div>
+  </div>
+ 
+
+ <div class="relative group">
+   <img src="img/yellowconso.undefined" class="w-full h-[400px] object-cover transition-opacity duration-300 opacity-100 group-hover:opacity-0" style="height: 400px;">
+   
+   <img src="img/MONO_CONSOLE_CARE_STU_453eaa1a-02d9-4ba7-9d9a-8d05e2915f8f_1366x904_crop_center.jpeg" class="w-full h-[400px] absolute inset-0 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" style="height: 400px;">
+ 
+   <div class="flex justify-between ">
+    <span class="uppercase pt-2 text-[#1a2456] font-bold text-lg">Monogram<br> Care
+    </span>
+    <p class="text-[#1a2456] pt-2">$19 - $129</p>
+  </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-[#1a2456] h-[300px] flex flex-col mt-10">
+  <div class="grid grid-cols-6 gap-4 mx-auto mt-10 text-[#EFC2B3] text-sm w-[86%]">
+
+    <div class="">
+      <h3 class="uppercase pb-5">Monogram </h3>
+      <p>305 King St. W.</p>
+      <p>Suite 502</p>
+      <p> Kitchener, ON </p>
+      <p> Canada</p>
+    </div>
+
+    <div class="decoration">
+      <h3 class="uppercase pb-5">Quick Links </h3>
+      <ul>
+        <a href="#" class="hover:underline cursor-pointer"><li>Home</a>
+        <a href="#" class="hover:underline cursor-pointer"><li>How it works</a>
+        <a href="#" class="hover:underline cursor-pointer"><li> Shop</a>
+        <a href="#" class="hover:underline cursor-pointer"><li> Download</a>
+      </ul>
+    </div>
+
+    <div class="">
+      <h3 class="uppercase pb-5">Help</h3>
+      <ul>
+        <a href="#" class="hover:underline cursor-pointer"><li>FAQs</a>
+        <a href="#" class="hover:underline cursor-pointer"><li>Support Center</a>
+        <a href="#" class="hover:underline cursor-pointer"><li> Shipping and Sales </a>
+      </ul>
+    </div>
+
+    <div class="">
+      <h3 class="uppercase pb-5">Information</h3>
+     <ul> 
+        <a href="#" class="hover:underline cursor-pointer"><li>About Us</li></a>
+        <a href="#" class="hover:underline cursor-pointer"><li>Work with us</li></a>
+        <a href="#" class="hover:underline cursor-pointer"><li> Privacy Policy</li></a>
+        <a href="#" class="hover:underline cursor-pointer"><li> Terms of Use</li></a>
+        <a href="#" class="hover:underline cursor-pointer"><li> Terms of Sale</li></a>
+        <a href="#" class="hover:underline cursor-pointer"><li> Press kit</li></a>
+     </ul>
+    </div>
+
+    <div class=" col-span-2">
+      <h3 class="uppercase pb-5">Subscribe to Monogram</h3>
+      <p>Master productivity with Creative Console and get all <br> the latest Monogram news.</p>
+      
+      
+      <div class="flex gap-4 justify-items-center items-center mt-5">
+        <input type="email" placeholder="Email Address" class="email-input"/>
+              
+        <div class="bg-[#EFC2B3] text-[#1A2456] rounded-xl "> 
+        <button class="text-center w-24 h-8 cursor-pointer">Submit</button>
+        </div>
+      
+      </div>
+
+       <!-- social media -->
+    <div class="flex w-fit gap-3 mt-5">
+        <div class="rounded-full bg-[#EFC2B3] w-[27px] h-[27px] border-2 flex justify-center items-center hover:bg-slate-400 cursor-pointer">
+          <img src="img/instagram.svg" class="w-[12px] h-[12px] ">
+        </div>
+
+        <div class="rounded-full bg-[#EFC2B3] w-[27px] h-[27px] border-2 flex justify-center items-center hover:bg-slate-400 cursor-pointer">
+        <img src="img/twitter.svg" class=" w-[12px] h-[12px]">
+        </div>
+
+        <div class="rounded-full bg-[#EFC2B3] w-[27px] h-[27px] border-2 flex justify-center items-center hover:bg-slate-400 cursor-pointer">
+        <img src="img/facebook.svg" class=" w-[12px] h-[12px]">
+        </div>
+      
+        <div class="rounded-full bg-[#EFC2B3] w-[27px] h-[27px] border-2 flex justify-center items-center hover:bg-slate-400 cursor-pointer"> 
+        <img src="img/youtube.svg" class=" w-[12px] h-[12px]">
+        </div>
+    
+  </div>
+    
+  <div class="mt-5">
+    <p>&copy Mongram 2025</p>
+  </div>
+  
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript for Smooth Scrolling -->
+<script>
+  document.getElementById('scroll-arrow').addEventListener('click', () => {
+    document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
